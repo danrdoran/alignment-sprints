@@ -129,3 +129,15 @@ Expected time allocation: **1-2 hours**
    - `python scripts/check_hyperbolic_models.py`
 4. Optional local sanity-only mode:
    - `python scripts/check_hyperbolic_models.py --dry-run`
+
+## Local Run Scripts
+- Step 3 logprob sanity:
+  - `python scripts/check_true_false_logprobs.py`
+- Step 4 data/prompt sanity:
+  - `python scripts/check_data_and_prompts.py`
+- Step 6 query helper sanity:
+  - `python scripts/check_query_helper.py`
+- Step 7 single-seed ICM run:
+  - `python scripts/run_icm_search.py --max-examples 24 --max-iterations 6 --num-seed 8 --seed 42`
+- Step 8 multi-seed pseudo-label generation:
+  - `python scripts/run_icm_multiseed.py --seeds 42,43,44 --max-examples 32 --max-iterations 12 --num-seed 8`

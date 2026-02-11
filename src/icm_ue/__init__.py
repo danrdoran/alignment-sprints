@@ -15,6 +15,8 @@ from .prompts import (
     build_labeled_example_line,
     label_to_text,
 )
+from .querying import ICMBaseModelQuerier, QueryScoreResult, QuerySettings
+from .icm_search import ICMConfig, ICMRunResult, IterationRecord, run_icm_search
 from .scoring import (
     DEFAULT_EPS,
     DEFAULT_MIN_SIGNAL_MASS,
@@ -36,10 +38,17 @@ __all__ = [
     "build_fewshot_prompt_from_examples",
     "build_labeled_example_line",
     "group_by_consistency_id",
+    "ICMConfig",
+    "ICMBaseModelQuerier",
+    "ICMRunResult",
+    "IterationRecord",
     "label_to_text",
     "load_truthfulqa_dataset",
     "load_truthfulqa_split",
     "normalize_top_logprobs",
+    "QueryScoreResult",
+    "QuerySettings",
+    "run_icm_search",
     "score_true_false_from_top_logprobs",
     "token_to_true_false",
 ]
