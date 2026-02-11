@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# Virtual env / env files
+.venv/
+.env
+.env.*
+
+# Secrets
+SECRETS
+*.key
+*.pem
+
+# Generated experiment artifacts
+outputs/*
+!outputs/.gitkeep
+!outputs/logs/.gitkeep
+!outputs/labels/.gitkeep
+!outputs/metrics/.gitkeep
+!outputs/raw/.gitkeep
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
